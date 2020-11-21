@@ -4,19 +4,18 @@ import { RouterModule, Routes } from "@angular/router";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { HomeComponent } from "./home.component";
-import { loginComponent } from "./login.component";
-import { registrationComponent } from "./registration.component";
-import { bookingComponent } from "./booking.component";
-import { paymentComponent } from "./payment.component";
-import { reportComponent } from "./report.component";
-import { adminComponent } from "./admin.component";
-import { adminloginComponent } from "./adminlogin.component";
-import { addComponent } from "./add.component";
-import { modComponent } from "./mod.component";
+import { HomeComponent } from "./home/home.component";
+import { loginComponent } from "./login/login.component";
+import { registrationComponent } from "./registration/registration.component";
+import { bookingComponent } from "./booking/booking.component";
+import { paymentComponent } from "./payment/payment.component";
+import { reportComponent } from "./report/report.component";
+import { adminComponent } from "./admin/admin.component";
+import { adminloginComponent } from "./adminlogin/adminlogin.component";
+import { addComponent } from "./add/add.component";
+import { modComponent } from "./modify/mod.component";
 
 import { ComService } from "./communication.service";
-
 
 const appRoutes: Routes = [
   { path: "login", component: loginComponent },
@@ -27,10 +26,9 @@ const appRoutes: Routes = [
   { path: "report", component: reportComponent },
   { path: "admin", component: adminComponent },
   { path: "adminlogin", component: adminloginComponent },
-  {path: "add", component:addComponent},
-  {path: "mod", component:modComponent},
+  { path: "add", component: addComponent },
+  { path: "mod", component: modComponent },
   { path: "", redirectTo: "/login", pathMatch: "full" }
-  
 ];
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes, {})],
@@ -44,7 +42,8 @@ const appRoutes: Routes = [
     reportComponent,
     adminComponent,
     adminloginComponent,
-    addComponent,modComponent
+    addComponent,
+    modComponent
   ],
   bootstrap: [AppComponent],
   providers: [ComService],

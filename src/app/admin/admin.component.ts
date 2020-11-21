@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
-import { ComService } from "./communication.service";
+import { ComService } from "./../communication.service";
 
 @Component({
-  selector: "home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"]
+  selector: "admin",
+  templateUrl: "./admin.component.html",
+  styleUrls: ["./admin.component.css"]
 })
-export class HomeComponent {
+export class adminComponent {
   parking_slots: any = [];
   constructor(public com: ComService) {
     this.copy();

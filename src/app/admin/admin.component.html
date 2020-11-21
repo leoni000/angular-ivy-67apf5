@@ -10,13 +10,15 @@
 	<tr>
 		<td class="td1">parking_name</td>
 		<td class="td1">total slots</td>
-		<td class="td1">available slots</td>
+		<td class="td1">Available slots at 11am</td>
+		<td class="td1">Available slots at 12 pm</td>
 
 	</tr>
 	<tr *ngFor="let name of parking_slots" routerLink="/booking" (click)=check(name); class="st">
 		<td class="td2">{{name.parking_name}}</td>
 		<td class="td2">{{name.total_spots}}</td>
-		<td class="td2">{{name.available}}</td>
+		<td class="td2">{{name.available11}}</td>
+		<td class="td2">{{name.available12}}</td>
 	</tr>
 
 

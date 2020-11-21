@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { ComService } from "./communication.service";
+import { ComService } from "./../communication.service";
 @Component({
   selector: "login",
   templateUrl: "./report.component.html",
