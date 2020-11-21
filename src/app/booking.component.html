@@ -1,0 +1,34 @@
+<div class="group">
+	<p> parking allocation </p>
+
+</div>
+<div>
+	<p class="one">{{book.parking_name}}</p>
+
+	<div class="center">
+		<div class="lt">
+			<p>customer details </p>
+			<label>Name :  </label> <input type="text"  [(ngModel)] = "customer_name"/>
+			<br><br>
+			<label>Mobile no : </label> <input type="text"  [(ngModel)] = "customer_mobile"/>
+			<br><br>
+			<label>Vechile no :  </label><input type="text"  [(ngModel)] = "customer_vechicle"/>
+			<br><br>
+			<label>Email:  </label><input type="text"  [(ngModel)] = "customer_email"/> <br><br>
+    </div>
+			<div class="rt">
+				<p>parking details</p>
+				<label>  11am to 12pm </label> <input type="checkbox"  [(ngModel)] = "ck1"/>
+				<br><br>
+				<label>  12pm to 1am </label> <input type="checkbox"  [(ngModel)] = "ck2"/><br><br>
+				<label>parking slot</label> <input type="text" value="{{parkingslot}}" readonly>
+				<br><br>
+				<label>parking location</label> <input type="text" value="{{book.parking_name}}" readonly>
+
+    </div>
+
+			</div>
+			<div>
+				<button class="pay" routerLink="/payment" (click)="populate(ck1,ck2)">Proceed to payment</button>
+			</div>
+		</div>

@@ -1,0 +1,13 @@
+<div class="group">
+	<p> Parking Allocation </p>
+
+</div>
+
+<div class="lt">
+	<p>Enter parking details</p>
+	<label>Name :  </label> <input type="text"  [(ngModel)] = "name"/>
+	<br><br>
+	<label>total slots : </label> <input type="text"  [(ngModel)] = "spots"/>
+	<br><br>
+	<button class="add" (click)="check()"  routerLink="/admin">  Add Parking           </button>
+</div>

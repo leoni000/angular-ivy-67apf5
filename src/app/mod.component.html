@@ -1,0 +1,34 @@
+<div class="full">
+	<div class="group">
+		<p> parking allocation </p>
+
+	</div>
+	<div *ngIf="btn">
+		<button class="bt" (click)="setflag()">  remove Parking           </button>
+		<button class="bt1" (click)="setflag1()">  Modify slots           </button>
+	</div>
+	<div *ngIf="flag" class="log">
+		<p>Enter parking details</p>
+		<form class="input-group">
+			<input type="text" class="input-field" [(ngModel)]="name" placeholder="enter parking name" name="name">
+			<br>
+
+			<br>
+			<br>
+			<button class="btn" routerLink="/admin" (click)="remove()">Remove spot?</button>
+		</form>
+	</div>
+	<div *ngIf="flag1" class="log">
+		<p>Enter parking details</p>
+		<form class="input-group">
+			<input type="text" class="input-field" [(ngModel)]="name" placeholder="enter parking name" name="name">
+			<br>
+			<input type="text" class="input-field" [(ngModel)]="spots" placeholder="enter no of spots" name="sp">
+			<br>
+
+			<br>
+			<br>
+			<button class="btn" routerLink="/admin" (click)="modify()">Modify spot?</button>
+
+		</form>
+	</div>

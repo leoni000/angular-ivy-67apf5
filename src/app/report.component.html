@@ -1,0 +1,24 @@
+<div class="full">
+	<div class="group">
+		<p> Parking Allocation </p>
+
+	</div>
+	<div style="background-size:cover" class="back">
+
+		<div class="log">
+			<form class="input-group">
+				<div class="in">
+					<label>Name:  {{customer_name}}</label>
+					<br><br>
+					<label>Vechicle no: {{customer_vechicle}}</label>
+					<br><br>
+					<label>Parking name: {{parking_name}} </label>
+					<br><br>
+					<label>Parking time: {{parkingtime}} </label><br><br>
+					<label>Parking slot: {{parkingslot}} </label><br><br>
+					<label>Amount: {{amount}} </label><br><br>
+        </div>
+			</form>
+		</div>
+		<button class="out" routerLink="/home" (click)="modify()"> Return Home</button>
+	</div>

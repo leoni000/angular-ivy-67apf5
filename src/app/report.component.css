@@ -1,0 +1,50 @@
+.group {
+  overflow: hidden;
+  background-color: crimson;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.group p {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 20px;
+}
+.input-group {
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.back {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+.log {
+  top: 10%;
+  left: 40%;
+  position: absolute;
+}
+label {
+  display: inline-block;
+}
+.in {
+  display: inline-block;
+}
+.out {
+  top: 67%;
+  left: 40%;
+  position: absolute;
+  width: 70;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}

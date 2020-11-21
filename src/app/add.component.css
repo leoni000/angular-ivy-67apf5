@@ -1,0 +1,42 @@
+.group {
+  overflow: hidden;
+  background-color: crimson;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.group p {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 20px;
+}
+.lt {
+  top: 28%;
+  left: 40%;
+  position: absolute;
+  display: block;
+}
+ .lt p {
+  text-align: center;
+}
+label {
+  width: 100px;
+  display: inline-block;
+}
+.add {
+  left: 30%;
+  
+  position: absolute;
+  width: 70;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
