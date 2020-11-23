@@ -3,7 +3,7 @@
 
 </div>
 <div>
-  	<button routerLink="/login"  class="sub-but1">logout</button>
+	<button routerLink="/login"  class="sub-but1">logout</button>
 	<div class="one">
 		<p>Select Parking</p>
 		<select name="my-select"  [(ngModel)]="mySelect" >
@@ -17,11 +17,11 @@
 			<p>customer details </p>
 			<label>Name :  </label> <input type="text"  [(ngModel)] = "customer_name"/>
 			<br><br>
-			<label>Mobile no : </label> <input type="text"  [(ngModel)] = "customer_mobile"/>
+			<label>Mobile no : </label> <input type="number"  [(ngModel)] = "customer_mobile"/>
 			<br><br>
 			<label>Vechile no :  </label><input type="text"  [(ngModel)] = "customer_vechicle"/>
 			<br><br>
-			<label>Email:  </label><input type="text"  [(ngModel)] = "customer_email"/> <br><br>
+			<label>Email:  </label><input type="email"  [(ngModel)] = "customer_email"/> <br><br>
     </div>
 			<div class="rt">
 				<p>parking details</p>
