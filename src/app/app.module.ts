@@ -31,7 +31,7 @@ const appRoutes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" }
 ];
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes, {})],
+  imports: [BrowserModule, FormsModule,ReactiveFormsModule, RouterModule.forRoot(appRoutes, {})],
   declarations: [
     AppComponent,
     HomeComponent,

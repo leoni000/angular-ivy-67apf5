@@ -24,7 +24,7 @@
   position: absolute;
 }
 .log {
-  top: 35%;
+  top: 30%;
   left: 40%;
   position: absolute;
 }
@@ -53,4 +53,3 @@
   outline: none;
   cursor: pointer;
 }
-

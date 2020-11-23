@@ -3,8 +3,15 @@
 
 </div>
 <div>
-	<p class="one">{{book.parking_name}}</p>
-
+  	<button routerLink="/login"  class="sub-but1">logout</button>
+	<div class="one">
+		<p>Select Parking</p>
+		<select name="my-select"  [(ngModel)]="mySelect" >
+    <option [value]="item.parking_name" *ngFor="let item of com.data">
+        {{item.parking_name}}
+    </option>
+</select>
+	</div>
 	<div class="center">
 		<div class="lt">
 			<p>customer details </p>
@@ -18,12 +25,13 @@
     </div>
 			<div class="rt">
 				<p>parking details</p>
-				<label>  11am to 12pm </label> <input type="checkbox"  [(ngModel)] = "ck1"/>
+				<label>  11am to 12pm </label> <input type="checkbox"  [(ngModel)] = "ck1" (focusout)="selectChange()"/>
 				<br><br>
-				<label>  12pm to 1am </label> <input type="checkbox"  [(ngModel)] = "ck2"/><br><br>
-				<label>parking slot</label> <input type="text" value="{{parkingslot}}" readonly>
+				<label>  12pm to 1am </label>
+				<input type="checkbox"  [(ngModel)] = "ck2" (focusout)="selectChange()"/><br><br>
+				<label>parking slot</label> <input type="text" value="{{available}}" readonly>
 				<br><br>
-				<label>parking location</label> <input type="text" value="{{book.parking_name}}" readonly>
+				<label>parking location</label> <input type="text" value="{{mySelect}}" readonly>
 
     </div>
 

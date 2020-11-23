@@ -68,3 +68,15 @@ td.td2 {
   outline: none;
   cursor: pointer;
 }
+.sub-but1 {
+  width: 70;
+  top: 15%;
+  right: 1%;
+  position: absolute;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}

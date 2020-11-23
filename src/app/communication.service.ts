@@ -22,7 +22,7 @@ export class ComService {
       flag: 0
     },
     {
-      parking_name: "north car strret",
+      parking_name: "north car street",
       total_spots: 11,
       available11: 6,
       available12: 10,

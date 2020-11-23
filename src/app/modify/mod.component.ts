@@ -14,7 +14,8 @@ export class modComponent {
   name: string;
   spots: number;
   index: number;
-  available: number;
+  available11: number;
+  available12: number;
 
   constructor(public com: ComService) {}
 
@@ -40,11 +41,15 @@ export class modComponent {
     for (let order of this.com.data) {
       if (this.name == order.parking_name) {
         this.index = this.com.data.indexOf(order);
-        this.available =
-          this.com.data[this.index].available +
+        this.available11 =
+          this.com.data[this.index].available11 +
+          (this.spots - this.com.data[this.index].total_spots);
+        this.available12 =
+          this.com.data[this.index].available12 +
           (this.spots - this.com.data[this.index].total_spots);
         this.com.data[this.index].total_spots = this.spots;
-        this.com.data[this.index].available = this.available;
+        this.com.data[this.index].available11 = this.available11;
+        this.com.data[this.index].available12 = this.available12;
 
         break;
       }
