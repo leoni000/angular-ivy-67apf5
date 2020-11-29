@@ -19,22 +19,20 @@ export class adminloginComponent {
       pass: new FormControl("", [Validators.required])
     });
   }
-  chname() {
-    if (this.loginForm.get("name").value != "admin") {
+ 
+  ckpass() {
+      if (this.loginForm.get("name").value != "admin") {
       alert("Invalid name");
       this.loginForm.setValue({ name: "", pass: "", id: "" });
     }
-  }
-  ckpass() {
-    if (this.loginForm.get("pass").value != "1234") {
+     else if (this.loginForm.get("pass").value != "1234") {
       alert("Invalid password");
       this.loginForm.setValue({ name: "", pass: "", id: "" });
     }
-  }
-  ckid() {
-    if (this.loginForm.get("id").value != "8080") {
+     else if (this.loginForm.get("id").value != "8080") {
       alert("Invalid id");
       this.loginForm.setValue({ name: "", pass: "", id: "" });
     }
   }
+ 
 }

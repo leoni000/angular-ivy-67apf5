@@ -9,7 +9,7 @@
 
 		<div class="log">
 			<form class="input-group" [formGroup]="loginForm">
-				<input type="text" class="input-field" placeholder="User name"     formControlName="name" (focusout)="chname()"required/>
+				<input type="text" class="input-field" placeholder="User name"     formControlName="name" required/>
 				<div
 					*ngIf="loginForm.controls['name'].invalid && (loginForm.controls['name'].dirty || loginForm.controls['name'].touched)">
 					<div *ngIf="loginForm.controls['name'].errors.required">
@@ -25,18 +25,18 @@
 						*Password is required.
 					</div>
 				</div>
-		
+
 				<br>
 				<br>
 				<button routerLink="/booking"  [disabled]="loginForm.pristine || loginForm.invalid"class="sub-but">login</button><br>
-        	<button routerLink="/registration" class="sub-but">New User</button><br>
-			<button routerLink="/adminlogin" class="sub-but">Admin login</button>
+				<button routerLink="/registration" class="sub-but">New User</button><br>
+				<button routerLink="/adminlogin" class="sub-but">Admin login</button>
 			</form>
 			<br>
 
 
 		</div>
-		
+
 
 
 		</div>

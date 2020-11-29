@@ -10,10 +10,9 @@ import { registrationComponent } from "./registration/registration.component";
 import { bookingComponent } from "./booking/booking.component";
 import { paymentComponent } from "./payment/payment.component";
 import { reportComponent } from "./report/report.component";
-import { adminComponent } from "./admin/admin.component";
+
 import { adminloginComponent } from "./adminlogin/adminlogin.component";
-import { addComponent } from "./add/add.component";
-import { modComponent } from "./modify/mod.component";
+
 
 import { ComService } from "./communication.service";
 
@@ -24,10 +23,9 @@ const appRoutes: Routes = [
   { path: "booking", component: bookingComponent },
   { path: "payment", component: paymentComponent },
   { path: "report", component: reportComponent },
-  { path: "admin", component: adminComponent },
+  
   { path: "adminlogin", component: adminloginComponent },
-  { path: "add", component: addComponent },
-  { path: "mod", component: modComponent },
+
   { path: "", redirectTo: "/login", pathMatch: "full" }
 ];
 @NgModule({
@@ -40,10 +38,8 @@ const appRoutes: Routes = [
     bookingComponent,
     paymentComponent,
     reportComponent,
-    adminComponent,
-    adminloginComponent,
-    addComponent,
-    modComponent
+    adminloginComponent
+   
   ],
   bootstrap: [AppComponent],
   providers: [ComService],

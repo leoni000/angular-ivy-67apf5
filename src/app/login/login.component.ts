@@ -24,20 +24,15 @@ export class loginComponent {
       pass: new FormControl("", [Validators.required])
     });
   }
-  chname() {
+  
+   ckpass() {
    
-       this.namee=this.loginForm.get("name").value;
-        console.log(this.namee);
-        if(this.namee!="viki"){
+       if(this.loginForm.get("name").value!="viki"){
 
           alert("Invalid username");
           this.loginForm.setValue({name:"",pass:""});
         }
-  }
-   ckpass() {
-   
-      
-        if(this.loginForm.get("pass").value!="1234"){
+       else  if(this.loginForm.get("pass").value!="1234"){
 
           alert("Invalid password");
           this.loginForm.setValue({name:"",pass:""});

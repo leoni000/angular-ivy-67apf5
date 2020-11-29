@@ -15,31 +15,35 @@ export class ComService {
 
   public data: any = [
     {
-      parking_name: "kv nagar",
+      parking_name: "KV Nagar",
       total_spots: 8,
+      address:"Crosscut road,Gandhipuram",
       available11: 8,
       available12: 6,
       flag: 0
     },
     {
-      parking_name: "north car street",
+      parking_name: "North Car Street",
       total_spots: 11,
+       address:"Crosscut road,Gandhipuram",
       available11: 6,
       available12: 10,
       flag: 0
     },
 
     {
-      parking_name: "balaji street",
+      parking_name: "Balaji Street",
       total_spots: 8,
+       address:"Crosscut road,Gandhipuram",
       available11: 4,
       available12: 6,
       flag: 0
     },
 
     {
-      parking_name: "jb street",
+      parking_name: "JB Street",
       total_spots: 10,
+       address:"Crosscut road,Gandhipuram",
       available11: 8,
       available12: 6,
       flag: 0

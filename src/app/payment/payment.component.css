@@ -1,7 +1,7 @@
 .group {
   overflow: hidden;
-  background-color: crimson;
-  margin: 5px;
+  background-color:rgb(250, 31, 31);
+  
   border-radius: 10px;
 }
 
@@ -75,7 +75,7 @@
   top: 80%;
   left: 40%;
   position: absolute;
-  background-color: #4caf50;
+  background-color:rgb(250, 31, 31);
   color: white;
   font-family: sans-serif;
   cursor: pointer;
@@ -87,5 +87,5 @@
   font-size: 25px;
 }
 .btn:hover {
-  background-color: #45a049;
+  background-color:rgb(250, 31, 31);
 }
