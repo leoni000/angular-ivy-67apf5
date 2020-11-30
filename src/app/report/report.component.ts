@@ -51,4 +51,7 @@ export class reportComponent {
       }
     }
   }
+   popup() {
+    alert("Logged out successfully");
+  }
 }

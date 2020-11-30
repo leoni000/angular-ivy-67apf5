@@ -10,7 +10,7 @@
 
 .group p {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 10px 16px;
 
@@ -52,6 +52,7 @@
   border: 0;
   outline: none;
   cursor: pointer;
+  
 }
 .new {
   top: 70%;

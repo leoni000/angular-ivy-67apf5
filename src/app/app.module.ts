@@ -10,9 +10,9 @@ import { registrationComponent } from "./registration/registration.component";
 import { bookingComponent } from "./booking/booking.component";
 import { paymentComponent } from "./payment/payment.component";
 import { reportComponent } from "./report/report.component";
+import { myBookingComponent } from "./mybooking/mybooking.component";
 
 import { adminloginComponent } from "./adminlogin/adminlogin.component";
-
 
 import { ComService } from "./communication.service";
 
@@ -23,13 +23,18 @@ const appRoutes: Routes = [
   { path: "booking", component: bookingComponent },
   { path: "payment", component: paymentComponent },
   { path: "report", component: reportComponent },
-  
+  { path: "mybooking", component: myBookingComponent },
   { path: "adminlogin", component: adminloginComponent },
 
   { path: "", redirectTo: "/login", pathMatch: "full" }
 ];
 @NgModule({
-  imports: [BrowserModule, FormsModule,ReactiveFormsModule, RouterModule.forRoot(appRoutes, {})],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes, {})
+  ],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -38,8 +43,8 @@ const appRoutes: Routes = [
     bookingComponent,
     paymentComponent,
     reportComponent,
-    adminloginComponent
-   
+    adminloginComponent,
+    myBookingComponent
   ],
   bootstrap: [AppComponent],
   providers: [ComService],

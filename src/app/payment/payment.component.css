@@ -7,7 +7,7 @@
 
 .group p {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 10px 16px;
 
@@ -17,7 +17,7 @@
 }
 
 
-.pay {
+.pay1 {
   top: 5%;
   left: 47%;
   position: absolute;
@@ -30,6 +30,8 @@
   position: absolute;
   border: transparent;
   font-size: 16px;
+   background-color:rgb(250, 31, 31);
+  color: white;
   cursor: pointer;
   border-radius: 5px;
   padding: 0.5em;
@@ -37,6 +39,8 @@
 .bt1 {
   top: 25%;
   left: 65%;
+   background-color:rgb(250, 31, 31);
+  color: white;
   position: absolute;
   border: transparent;
   font-size: 16px;
@@ -46,13 +50,16 @@
 }
 
 .back {
-  height: 80%;
-  width: 100%;
+  top: 20%;
+  left: 25%;
+  height: 70%;
+  width: 70%;
   position: absolute;
+   box-shadow: 5px 10px 8px #888888;
 }
 .log {
-  top: 25%;
-  left: 40%;
+  top: 15%;
+  left: 35%;
   position: absolute;
 }
 .input-group {
@@ -79,13 +86,32 @@
   color: white;
   font-family: sans-serif;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 4px;
   text-align: center;
-  width: 25%;
+  width: 15%;
   margin-top: 0em;
   padding: 0.5em;
-  font-size: 25px;
+  font-size: 15px;
 }
-.btn:hover {
-  background-color:rgb(250, 31, 31);
+
+.two {
+  position: absolute;
+  top: 15%;
+  width: 20%;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+.b1 {
+  width: 80%;
+  margin-left: 8%;
+  background-color: rgb(250, 31, 31);
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 0em;
+  padding: 0.5em;
+  border: transparent;
 }

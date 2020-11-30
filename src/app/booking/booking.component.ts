@@ -13,6 +13,9 @@ export class bookingComponent {
   customer_email: string = "";
   ck1: boolean;
   ck2: boolean;
+  bookck:boolean =true;
+  bookingck:boolean=false;
+
 
   amount: number;
   book: any = [];
@@ -87,6 +90,9 @@ export class bookingComponent {
         }
       }
     }
+  }
+  popup() {
+    alert("Logged out successfully");
   }
   
 }

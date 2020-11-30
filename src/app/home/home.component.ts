@@ -21,6 +21,7 @@ export class HomeComponent {
   index: number;
   available11: number;
   available12: number;
+  rname: string;
 
   parking_slots: any = [];
   obj = {};
@@ -66,7 +67,7 @@ export class HomeComponent {
   }
   removeslots() {
     for (let order of this.com.data) {
-      if (this.name.toLowerCase() == order.parking_name.toLowerCase()) {
+      if (this.rname.toLowerCase() == order.parking_name.toLowerCase()) {
         this.com.data.splice(this.com.data.indexOf(order), 1);
         break;
       }

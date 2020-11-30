@@ -15,44 +15,16 @@
   text-decoration: none;
   font-size: 20px;
 }
-.input-group {
+.two {
   position: absolute;
-  width: 280px;
-  transition: 0.5s;
-}
-.back {
-  top: 20%;
-  left: 25%;
-  height: 70%;
-  width: 70%;
-  position: absolute;
+  top: 15%;
+  width: 20%;
+  bottom: 0;
+  background-color: white;
   box-shadow: 5px 10px 8px #888888;
 }
-.log {
-  top: 10%;
-  left: 40%;
-  position: absolute;
-}
-label {
-  display: inline-block;
-}
-.in {
-  display: inline-block;
-}
-.out {
-  top: 67%;
-  left: 40%;
-  background-color: rgb(250, 31, 31);
-  color: white;
-  position: absolute;
-  width: 70;
-  padding: 5px 30px;
+button {
   display: block;
-  margin: auto;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
 }
 .b1 {
   width: 80%;
@@ -67,14 +39,36 @@ label {
   padding: 0.5em;
   border: transparent;
 }
-.two {
+
+.three {
   position: absolute;
-  top: 15%;
-  width: 20%;
-  bottom: 0;
+  top: 14%;
+  left: 22%;
+
+  bottom: 0%;
+  width: 75%;
+  overflow: scroll;
+  background-color: white;
+}
+.four {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  bottom: 5%;
+  width: 90%;
   background-color: white;
   box-shadow: 5px 10px 8px #888888;
 }
-button {
-  display: block;
+table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  width: 50em;
+  padding: 15px;
 }
