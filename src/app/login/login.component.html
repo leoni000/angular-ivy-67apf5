@@ -9,7 +9,7 @@
 
 		<div class="log">
 			<form class="input-group" [formGroup]="loginForm">
-				<input type="text" class="input-field" placeholder="User name"     formControlName="name" required/>
+				<input type="text" class="input-field" placeholder="User name -- viki"     formControlName="name" required/>
 				<div
 					*ngIf="loginForm.controls['name'].invalid && (loginForm.controls['name'].dirty || loginForm.controls['name'].touched)">
 					<div *ngIf="loginForm.controls['name'].errors.required">
@@ -17,7 +17,7 @@
 					</div>
 				</div>
 				<br>
-				<input type="password" class="input-field" placeholder="password"
+				<input type="password" class="input-field" placeholder="password -- 1234"
          formControlName="pass"  (focusout)="ckpass()"required/>
 				<div
 					*ngIf="loginForm.controls['pass'].invalid && (loginForm.controls['pass'].dirty || loginForm.controls['pass'].touched)">
